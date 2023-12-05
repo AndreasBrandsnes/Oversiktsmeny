@@ -1,0 +1,32 @@
+// Enkelt meny-oppsett for å navigere gjennom ulike menyalternativ
+
+#include <iostream>
+using namespace std;
+
+int choice;
+bool isRunning = true;
+
+int main()
+{
+	do
+	{
+		cout << "Please choose from the menu: \n";
+		cout << "01.Do something.\n";
+		cout << "02.Quit.\n";
+		cin >> choice;
+
+		switch (choice)
+		{
+		case 1:
+			cout << "\nSomething is done.\n\n";
+			break;
+
+		case 2:
+			cout << "\nOkey, byebye!" << endl;
+			isRunning = false;
+			break;
+		}
+
+	} while (isRunning == true);
+		return 0;
+}
