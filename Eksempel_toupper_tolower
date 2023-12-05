@@ -1,0 +1,23 @@
+// To upper and to lower 
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	string input;
+	cout << "Please input a word:" << endl;
+	cin >> input;
+
+	// This loop will automaticly shuffle through 'input' character for character, with a temp value x as referance. 
+	// Only works for 1 word - will cut off at first blank space. 
+	for (auto& x : input)
+	{
+		x = toupper(x);
+			cout << x;
+	}
+
+	return 0;
+}
