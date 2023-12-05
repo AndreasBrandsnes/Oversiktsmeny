@@ -1,0 +1,15 @@
+#include <iostream>
+#include <vector>
+#include <string>
+
+using namespace std;
+
+vector<string>(colors);
+
+int main()
+{
+	cout << "We have created the vector named colors, but it is empty at first.\n";
+	cout << "We can add elements to the vector by using the .push_back().\n";
+	colors.push_back("Red");
+	cout << colors[0];
+}
