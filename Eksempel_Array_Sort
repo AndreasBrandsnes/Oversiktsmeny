@@ -1,0 +1,62 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+string colors[] = { "Red", "Orange", "Yellow"};
+string numbers[] = { "1", "9", "3",};
+
+int theSize = sizeof(colors) / sizeof(colors[0]);
+int theSize2 = sizeof(numbers) / sizeof(numbers[0]);
+
+void thearrayColors();
+void thearrayNumbers();
+
+int main()
+{
+	cout << "In this code there are two arrays. One named colors and one named cars.\n";
+	cout << "The array named colors looks like this: \n";
+	for (int i = 0; i < theSize; i++)
+	{
+		cout << colors[i] << " ";
+	}
+		
+		
+	cout << "\n\n";
+	cout << "And the array named cars looks like this: \n";
+	for (int i = 0; i < theSize; i++)
+	{
+		cout << numbers[i] << " ";
+	}
+		
+
+	cout << "\n\n";
+	cout << "We can sort each array by using the sort() function\n";
+	cout << "When we sort the color-Array alphabetically, it looks like this:\n";
+	// This just sorts the array, and we use the for loop to print 	
+	sort(colors, colors + theSize);
+	for (int i = 0; i < theSize; i++)
+	{
+		cout << colors[i] << " ";
+	}
+
+	cout << "\n\n";
+	cout << "We now do the same for the second Array:\n";
+	sort(numbers, numbers + theSize2);
+	for (int i = 0; i < theSize; i++)
+	{
+		cout << numbers[i] << " ";
+	}
+
+	cout << "\n\n";
+	cout << "And lastly, we can reverse the order of the color Array. Just for fun.\n";
+	reverse(colors, colors + theSize);
+	for (int i = 0; i < theSize; i++)
+	{
+		cout << colors[i] << " ";
+	}
+	cout << "\nThe end.\n";
+
+	return 0;
+}
