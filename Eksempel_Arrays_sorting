@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+string colors[] = {"Red", "Orange", "Yellow", "Green", "Blue", "Indigo", "Violet"}
+
+int theSize = sizeof(colors) / sizeof(colors[0]);
+
+int main()
+{
+    cout << "To print the list of colors in the array we use a 'for loop' based on the : \n";
+    cout << "For sorting to work, we need to '#include <algorithm>!\n";
+    for (int i = 0; i < theSize; i++)
+        {
+         cout << colors[i] << " "; 
+        }
+
+    cout << "Now that we have our list of colors, we can reverse it by using 'reverse(colors, colors+theSize)\n";
+    cout << "Like this:\n";
+
+    reverse(colors, colors+theSize);
+    for (int i = 0; i < theSize; i++)
+            {
+             cout << colors[i] << " "; 
+            }
+
+    return 0;
+}
