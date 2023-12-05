@@ -1,0 +1,31 @@
+
+#include <iostream>
+#include <ctime>
+
+using namespace std;
+bool again = true;
+char choice;
+
+int main()
+{
+    do 
+    {
+    cout << (rand()% 100) << endl;                      // The function for randomization is (rand()% number)
+    cout << "\nDo you wanna roll again? (y/n)\n";
+        cin >> choice;
+        if (choice == 'n')
+        {
+            cout << "\nOk, bye!" << endl;
+            again = false;
+        }
+        else if (choice != 'y' && choice != 'n')
+        {
+            cout << "\nPlease enter 'y' or 'n'.";
+        }
+        else
+            cout << "\nYou roll again.\n";
+        
+    } while (again == true);
+
+        return 0;
+}
