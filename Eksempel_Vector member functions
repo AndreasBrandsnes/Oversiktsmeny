@@ -1,0 +1,37 @@
+Under is a list of member functions for vectors
+///////////////////////////////////////////////
+
+Constructor:
+vector(): Constructs an empty vector.
+
+Element Access:
+at(index): Returns a reference to the element at a specified position.
+operator[]: Returns a reference to the element at a specified position.
+front(): Returns a reference to the first element.
+back(): Returns a reference to the last element.
+data(): Returns a pointer to the underlying array.
+
+Modifiers:
+push_back(element): Adds an element to the end.
+pop_back(): Removes the last element.
+insert(position, element): Inserts an element at a specified position.
+erase(position): Removes an element at a specified position.
+clear(): Removes all elements.
+resize(new_size): Changes the size of the vector.
+swap(other_vector): Swaps the contents with another vector.
+
+Capacity:
+size(): Returns the number of elements.
+max_size(): Returns the maximum number of elements a vector can hold.
+capacity(): Returns the size of the allocated storage capacity.
+empty(): Returns whether the vector is empty.
+reserve(new_capacity): Requests that the vector capacity be at least enough to contain a certain number of elements.
+
+Iterators:
+begin(): Returns an iterator pointing to the first element.
+end(): Returns an iterator pointing one past the last element.
+rbegin(): Returns a reverse iterator pointing to the last element.
+rend(): Returns a reverse iterator pointing to one position before the first element.
+
+Non-Member Functions:
+std::swap(vector1, vector2): Swaps the contents of two vectors.
