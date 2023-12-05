@@ -11,5 +11,13 @@ int main()
 	cout << "We have created the vector named colors, but it is empty at first.\n";
 	cout << "We can add elements to the vector by using the .push_back().\n";
 	colors.push_back("Red");
-	cout << colors[0];
+	colors.push_back("Orange");
+	colors.push_back("Yellow");
+	for (int i = 0; i < colors.size(); i++)
+	{
+		cout << colors[i] << " ";
+	}
+	cout << "\n\n";
+
+	return 0;
 }
