@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+
+using namespace std;
+
+string colors[] = { "Red", "Orange", "Yellow"};
+string numbers[] = { "1", "9", "3",};
+
+int theSize = sizeof(colors) / sizeof(colors[0]);
+int theSize2 = sizeof(numbers) / sizeof(numbers[0]);
+
+int main()
+{
+	cout << "In this code there are two arrays. One named colors and one named cars.\n";
+	cout << "We can swap the position within an array using the swap().\n";
+	cout << "Lets swap the 1 and 3 in '1, 9, 3'.\n" << endl;
+	
+	// The swap
+	  swap(numbers[0], numbers[2]);
+	// The print
+		for (int i = 0; i < theSize2; i++)
+		{ 
+			cout << numbers[i] << " ";
+		}
+
+		cout << "\n\n";
+		cout << "We can also swap between arrays, simply by referring to the arrays.\n";
+		cout << "Lets swap the middle element in each array, the 'Orange' and '9' respectively.\n\n";
+	
+	// The swap
+	  swap(numbers[1], colors[1]);
+	// The print
+		cout << "Now, the number Array looks like this:" << endl;
+		for (int i = 0; i < theSize2; i++)
+		{
+			cout << numbers[i] << " ";
+		}
+
+	return 0;
+}
