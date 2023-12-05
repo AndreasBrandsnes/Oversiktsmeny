@@ -1,0 +1,40 @@
+// Eksempel Classes Car.cpp : This file contains the 'main' function. Program execution begins and ends there.
+//
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class Phone {
+        string p_name;
+        string p_size;
+        int p_prize;
+        // Everything above 'public' is private and cant be changed via main
+    public:
+        // Constructor of the objekt Phone
+        Phone(string name, string size) {
+            p_name = name;
+            p_size = size;
+
+        }
+        void makeCall() {
+            cout << "Making call using this phone, " << p_name << "." << endl;
+        }
+        void receiveCall() {
+            cout << "Receiving call using this phone, " << p_name << "." << endl;
+        }
+
+        void phoneInfo() {
+            cout << "The phone's name is " << p_name << " and it's size is " << p_size << ".\n";
+        }
+};
+
+int main()
+{
+    Phone testPhone("Samsung", "1980x1200");
+    testPhone.makeCall();
+    Phone newPhone("IphoneX", "2400x1450");
+    newPhone.phoneInfo();
+    return 0;
+}
