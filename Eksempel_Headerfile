@@ -1,0 +1,27 @@
+// Header file
+// Must #include "name of header file.h" 
+
+// This headerfile is called Sum.h
+// Sum.h contains the follwing:
+// int sumOfTwoNumbers(int a, int b)
+//    {
+//        return (a + b);
+//    }
+
+#include <iostream>
+#include "Sum.h"
+
+using namespace std;
+
+int main()
+{
+ 
+    // Given two numbers
+    int a = 13, b = 22;
+ 
+    // Function declared in header
+    // file to find the sum
+    cout << "Sum is: "
+         << sumOfTwoNumbers(a, b)
+         << endl;
+}
